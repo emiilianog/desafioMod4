@@ -1,0 +1,73 @@
+.header__content {
+  height: 120px;
+
+  background-color: #13171c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+}
+.logo {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+.menu_img,
+.cruz_img {
+  height: 40px;
+}
+@media (min-width: 975px) {
+  .menu_img,
+  .cruz_img {
+    display: none;
+  }
+}
+
+.options__content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  z-index: 2;
+}
+@media (min-width: 975px) {
+  .options__content {
+    position: static;
+    display: block;
+    background-color: initial;
+    font-size: 18px;
+  }
+}
+.options {
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 975px) {
+  .options {
+    height: 30px;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.cruz_img {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
+.opcion {
+  text-decoration: none;
+  color: #eeeeee;
+}

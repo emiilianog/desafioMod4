@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script defer src="components/header.js"></script>
+    <script defer src="components/footer.js"></script>
+    <script defer src="pages/index.js"></script>
+    <script defer src="pages/servicios.js"></script>
+
+    <link rel="stylesheet" href="components/header.css" />
+    <link rel="stylesheet" href="components/footer.css" />
+    <link rel="stylesheet" href="pages/servicios.css" />
+    <link rel="stylesheet" href="pages/index.css" />
+
+    <title>Mis Servicios</title>
+  </head>
+  <body>
+    <header class="header"></header>
+
+    <section class="servicios-section">
+      <div class="servicios-primero">
+        <h2 class="servicios__titulo">
+          Mis <span class="span">Servicios</span>
+        </h2>
+        <div class="servicios-imagen">
+          <img alt="maletin" class="maletin__servicios" />
+          <img src="" alt="" class="sombra__servicios" />
+        </div>
+      </div>
+
+      <div class="servicios-content">
+        <div class="servicios__card-content"></div>
+      </div>
+    </section>
+
+    <template id="servicios__template">
+      <div class="servicios__card">
+        <img src="" alt="" class="servicios__img" />
+        <div class="servicios__text-container">
+          <h4 class="servicios__card-title"></h4>
+          <p class="servicios__card-descripcion"></p>
+        </div>
+      </div>
+    </template>
+
+    <footer class="footer"></footer>
+  </body>
+</html>

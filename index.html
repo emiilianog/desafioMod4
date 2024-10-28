@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenidos</title>
+
+    <script defer src="components/header.js"></script>
+    <script defer src="pages/contacto.js"></script>
+    <script defer src="components/footer.js"></script>
+    <script defer src="pages/servicios.js"></script>
+    <script defer src="pages/portfolio.js"></script>
+    <script defer src="pages/index.js"></script>
+
+    <link rel="stylesheet" href="pages/index.css" />
+
+    <link rel="stylesheet" href="components/header.css" />
+    <link rel="stylesheet" href="pages/contacto.css" />
+    <link rel="stylesheet" href="components/footer.css" />
+    <link rel="stylesheet" href="pages/servicios.css" />
+    <link rel="stylesheet" href="pages/portfolio.css">
+  </head>
+
+  <body>
+    <header class="header"></header>
+
+    <section class="bienvenida">
+      <h1 class="bienvenida_title">
+        Hola <br /><span class="span">Soy Emi</span>
+      </h1>
+      <div class="bienvenida__content"></div>
+    </section>
+    <section class="presentacion">
+      <div class="presentacion__content"></div>
+    </section>
+
+    <section class="servicios-section">
+      <div class="servicios-content">
+        <h2 class="servicios__titulo">Mis <span class="span">Servicios</span></h2>
+        <div class="servicios__card-content"></div>
+      </section>
+        
+      </div>
+    <template id="servicios__template">
+      <div class="servicios__card">
+        <img src="" alt="" class="servicios__img" />
+        <div class="servicios__text-container">
+          <h4 class="servicios__card-title"></h4>
+          <p class="servicios__card-descripcion"></p>
+        </div>
+      </div>
+    </template>
+
+    <template id="bienvenida__template">
+      <div class="bienvenida_img-container">
+        <img class="bienvenida_img-uno" src="" alt="" />
+        <img class="bienvenida_img-dos" src="" alt="" />
+      </div>
+    </template>
+    <template id="presentacion__template">
+      <div class="presentacion__text-container">
+        <h2 class="presentacion__nombre"></h2>
+        <div class="presentacion__texto"></div>
+      </div>
+
+      <img src="" alt="Emi Gomez" class="presentacion__img" />
+    </template>
+
+    <section class="contacto__content"></section>
+    <footer class="footer"></footer>
+  </body>
+</html>

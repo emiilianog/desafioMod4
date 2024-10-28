@@ -1,0 +1,42 @@
+.footer_content {
+  background-color: #0f1113;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.footer_sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin: 40px 0;
+}
+
+@media (min-width: 975px) {
+  .footer_sections {
+    flex-direction: row;
+    width: 500px;
+    justify-content: space-between;
+  }
+}
+
+.middle {
+  vertical-align: middle;
+  padding: 0 5px 5px 0;
+}
+
+.footer_redes {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.derechos {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  margin-top: 40px;
+}

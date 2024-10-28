@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script defer src="components/header.js"></script>
+    <script defer src="components/footer.js"></script>
+    <script defer src="pages/index.js"></script>
+    <script defer src="pages/portfolio.js"></script>
+
+    <link rel="stylesheet" href="components/header.css" />
+    <link rel="stylesheet" href="components/footer.css" />
+    <link rel="stylesheet" href="pages/index.css" />
+    <link rel="stylesheet" href="pages/portfolio.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header"></header>
+    <section class="portfolio-section">
+      <div class="portfolio-primero">
+        <h2 class="portfolio__titulo">
+          Mis <span class="span">Trabajos</span>
+        </h2>
+        <div class="portfolio-imagen">
+          <img alt="maletin" class="maletin__portfolio" />
+          <img src="" alt="" class="sombra__portfolio" />
+        </div>
+      </div>
+
+      <div class="portfolio-content">
+        <div class="portfolio__card-content"></div>
+      </div>
+    </section>
+
+    <template id="portfolio__template">
+      <div class="portfolio__card">
+        <img src="" alt="" class="portfolio__img" />
+        <div class="portfolio__text-container">
+          <h4 class="portfolio__card-title"></h4>
+          <p class="portfolio__card-descripcion"></p>
+        </div>
+      </div>
+    </template>
+
+    <footer class="footer"></footer>
+  </body>
+</html>

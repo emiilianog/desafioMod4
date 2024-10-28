@@ -1,0 +1,101 @@
+.contacto__content {
+  background-color: #13171c;
+  color: white;
+  padding: 20px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 42px;
+}
+@media (min-width: 975px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    height: 800px;
+  }
+}
+.titulo {
+  font-size: 42px;
+}
+@media (min-width: 975px) {
+  .titulo {
+    font-size: 64px;
+  }
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 370px;
+  font-size: 18px;
+  font-weight: 700;
+}
+@media (min-width: 975px) {
+  .contact__form {
+    width: 600px;
+    max-width: 100%;
+  }
+}
+.input_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+}
+@media (min-width: 975px) {
+  #campo,
+  .label {
+    width: 100%;
+  }
+  .input_container {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.label {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+#campo {
+  font-family: "Poppins";
+  background-color: #393e4680;
+  border-radius: 16px;
+  font-size: 18px;
+  color: white;
+  height: 50px;
+
+  border-width: 0;
+}
+
+#mensaje {
+  font-family: "Poppins";
+  background-color: #393e4680;
+  border-radius: 16px;
+  font-size: 18px;
+  color: white;
+  padding: 0 20px;
+  height: 200px;
+  border-width: 0;
+}
+.button {
+  font-family: "Poppins";
+  background-color: #00adb5;
+  color: black;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  border-width: 0;
+  margin-top: 25px;
+}
+@media (min-width: 975px) {
+  .button {
+    width: 235px;
+  }
+}

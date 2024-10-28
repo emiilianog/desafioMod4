@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins";
+  margin: 0;
+}
+.bienvenida {
+  background-color: #13171c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 120px);
+}
+
+@media (min-width: 975px) {
+  .bienvenida {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+  }
+}
+
+.bienvenida_title {
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  padding-bottom: 40px;
+}
+.span {
+  color: #00adb5;
+}
+@media (min-width: 975px) {
+  .bienvenida_title {
+    font-size: 96px;
+  }
+}
+.bienvenida_img-uno {
+  width: 220px;
+}
+@media (min-width: 975px) {
+  .bienvenida_img-uno {
+    width: 100%;
+  }
+}
+
+.bienvenida_img-container {
+  width: 220px;
+}
+.bienvenida_img-dos {
+  display: none;
+}
+@media (min-width: 975px) {
+  .bienvenida_img-container {
+    width: 350px;
+    display: grid;
+    grid-row: 1fr 1fr;
+    gap: 150px;
+    justify-items: center;
+    height: 100%;
+  }
+  .bienvenida_img-dos {
+    display: inherit;
+  }
+}
+
+.presentacion {
+  background-color: #192130;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.presentacion__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 30px;
+  max-width: 350px;
+}
+@media (min-width: 975px) {
+  .presentacion__content {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+  }
+}
+
+.presentacion__text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 975px) {
+  .presentacion__text-container {
+    max-width: 400px;
+  }
+}
+.presentacion__nombre {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0;
+}
+@media (min-width: 975px) {
+  .presentacion__nombre {
+    font-size: 64px;
+  }
+}
+.presentacion__texto {
+  font-size: 18px;
+  padding: 40px 0;
+}
+.presentacion__img {
+  width: 100%;
+  border-radius: 15px;
+}
+@media (min-width: 975px) {
+  .presentacion__img {
+    max-width: 400px;
+  }
+}
